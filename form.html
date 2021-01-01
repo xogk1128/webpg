@@ -1,16 +1,27 @@
 <!doctype html>
 <html>
-<head>
-    <meta chest="UTF-8">
-    <title="웹 프로그래밍 폼형식">
-</head>
-<body>
-    <h1>폼 형식 공부 210101</h1>
-    <hr>
-    폼 형식을 공부해봅시다.
-    <form>
-        <input type="text" title="검색">
-        <input type="button" value="검색">
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>웹 프로그래밍 폼 형식</title>
+    </head>
+    <body>
+        <h1>로그인 창 만들기 210101</h1>
+        <hr>
+        로그인 창 만들기
+        <form action="login.php" method="post" autocomplete="off">
+            <dl>
+                <dt>
+                    <lable for="id">아이디</lable>
+                    <input type="text" id="id">
+                </dt>
+                <dt>
+                    
+                    <lable><input type="password"></lable>
+                </dt>
+                <dt>
+                    <input type="submit" title="로그인" value="로그인">
+                </dt>
+            </dl> 
+        </form>
+    </body>
 </html>

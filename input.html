@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>웹 프로그래밍 폼 형식</title>
+    </head>
+    <body>
+        <h1>로그인 창 만들기 210101</h1>
+        <hr>
+        
+        <form action="login.php" method="post" autocomplete="off">
+            <fieldset>
+                <legend>로그인 창</legend>
+            <dl>
+                <dt>
+                    <lable for="id">아이디</lable>
+                    <input type="text" id="id">
+                </dt>
+                <dt>
+                    <lable for="ps">비밀번호</lable>
+                    <input type="password" id="ps">
+                    
+                </dt>
+                <dt>
+                    <input type="submit" title="로그인" value="로그인">
+                </dt>
+            </dl>
+            </fieldset>
+            <fieldset>
+                <legend>개인 정보</legend>
+            <dl>
+                <dt>
+                    <lable for="name">이름</lable>
+                    <input type="text" id="name">
+                </dt>
+                <dt>
+                    <lable for="tel">연락처</lable>
+                    <input type="tel" id="tel">
+                    
+                </dt>
+            </dl>
+            </fieldset>
+            <fieldset>
+                <legend>주문 정보</legend>
+            <dl>
+                <dt>
+                    <lable><input type="checkbox">과일</lable>
+                    <lable><input type="number" min="0" max="10" value="0">개</lable>
+                </dt>
+                <dt>
+                    <lable><input type="checkbox">과자</lable>
+                    <lable><input type="number" min="0" max="10" value="0">개</lable>
+                    
+                </dt>
+                <dt>
+                    <lable><input type="checkbox">옷</lable>
+                    <lable><input type="number" min="0" max="10" value="0">개</lable>
+                </dt>
+            </dl>
+            
+            </fieldset>  
+        </form>
+    </body>
+</html>
