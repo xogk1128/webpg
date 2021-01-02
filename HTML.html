@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>웹 프로그래밍 폼 형식</title>
+    </head>
+    <body>
+        <h1>로그인 창 만들기 210102</h1>
+        <hr>
+        
+        <form action="login.php" method="post" autocomplete="off">
+            <h2>목차</h2>
+            <ol type="1">
+                <a href="#time"><li>현재 시각</li></a>
+                <a href="#login"><li>로그인 창</li></a>
+                <a href="#inform"><li>개인 정보</li></a>
+                <a href="#order"><li>주문 정보</li></a>
+                <a href="#school"><li>학교</li></a>
+                <a href="#select"><li>학교 선택</li></a>
+                <a href="#move"><li>네이버 이동</li></a>
+                <a href="#table"><li>표 만들기</li></a>
+                <a href="#git"><li>깃 바로가기</li></a>
+            </ol>
+            <h3 id="time">현재 시각</h3>
+            <input type="date">
+            <fieldset>
+                <legend id="login">로그인 창</legend>
+            <dl>
+                <dt>
+                    <lable for="id">아이디</lable>
+                    <input type="text" id="id">
+                </dt>
+                <dt>
+                    <lable for="ps">비밀번호</lable>
+                    <input type="password" id="ps">
+                    
+                </dt>
+                <dt>
+                    <input type="submit" title="로그인" value="로그인">
+                </dt>
+            </dl>
+            </fieldset>
+            <fieldset>
+                <legend id="inform">개인 정보</legend>
+            <dl>
+                <dt>
+                    <lable for="name">이름</lable>
+                    <input type="text" id="name">
+                </dt>
+                <dt>
+                    <lable for="tel">연락처</lable>
+                    <input type="tel" id="tel">
+                    
+                </dt>
+                <dt>
+                    <input type="image"  height="100" width="100" src="https://previews.123rf.com/images/sarahdesign/sarahdesign1509/sarahdesign150900283/44515898-%EC%9D%B4%EB%8F%99-%EB%B2%84%ED%8A%BC.jpg">
+                </dt>
+            </dl>
+            </fieldset>
+            <fieldset>
+                <legend id="order">주문 정보</legend>
+            <dl>
+                <dt>
+                    <lable><input type="checkbox">과일</lable>
+                    <lable><input type="number" min="0" max="10" value="0">개</lable>
+                </dt>
+                <dt>
+                    <lable><input type="checkbox">과자</lable>
+                    <lable><input type="number" min="0" max="10" value="0">개</lable>
+                    
+                </dt>
+                <dt>
+                    <lable><input type="checkbox">옷</lable>
+                    <lable><input type="number" min="0" max="10" value="0">개</lable>
+                </dt>
+            </dl>
+            
+            </fieldset> 
+            <fieldset>
+                <legend id="school">학교 및 전공</legend>
+                <dl>
+                    <dt>
+                        <select size="3">
+                            <option>한성대학교</option>
+                            <option>서경대학교</option>
+                            <option>삼육대학교</option>
+                        </select>
+                    </dt>
+                </dl>
+            </fieldset>
+            <fieldset>
+                <legend id="select">학교 선택해봅시다</legend>
+                <dl>
+                    <dt>
+                        <lable><input type="checkbox">
+                            한성대학교<input type="number" max="10">
+                            </lable>
+                            <textarea cols="5" rows="5">내용을 입력하세요</textarea>
+                    </dt>
+                </dl>
+            </fieldset>
+            <figure><a href="https://www.naver.com" target="_blank">
+                <img src="https://postfiles.pstatic.net/20131224_183/aqwweer_13878593291483JsiA_JPEG/%B3%D7%C0%CC%B9%F6.jpg?type=w2" 
+                alt="네이버" height="200" width="400">
+            </a>
+            <figcaption id="move">클릭하면 네이버로 이동합니다.</figcaption>
+            </figure>
+            <hr>
+            <h1 id="table">표를 만들어봅시다.</h1>
+            <table border="1">
+                <tr>
+                    <th></th>
+                    <th>토트넘</th>
+                    <th>리버풀</th>
+                    <th>아스날</th>
+                </tr>
+                <tr>
+                    <th>승점</th>
+                    <td>11</td>
+                    <td>11</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <th>순위</th>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <a href="https://github.com/" id="git">
+                <img src="https://github.githubassets.com/images/modules/open_graph/github-mark.png">
+            </a>
+        </form>
+    </body>
+</html>
